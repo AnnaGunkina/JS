@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DZ10</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Задание 1: 
+    1. Поиск в интернете (бесплатные api примеры).
+    2. Найти любые данные, на произвольную тему.
+    3. Создать файл data.js.
+    4. Создать переменную которая будет хранить данные из публичных api.
+    Задание 2:
+    1. Создать файл index.html.
+    2. Подключить data.js.
+    3. Сформировать контент из данных (картинка загловок и параграф).
+    4. Добавить данный контент в вёрстку.
+    5. * Добавить стили при необходимости (по желанию). -->
+    <main class="main"></main>
+    <script src="data.js"></script>
+    <script>
+      const data = JSON.parse(jsonData);
+      console.log(data);
+      const mainEl = document.querySelector('.main');
+
+      data.forEach(element => {
+          const divEl = document.createElement('div');
+          divEl.classList.add('content');
+
+          const headerEl = document.createElement(`h1`);
+          headerEl.classList.add('header');
+          headerEl.textContent = element.name;
+
+          const imgEl = document.createElement(`img`);
+          imgEl.classList.add('image');
+          imgEl.src = element.image; 
+
+          const idEl = document.createElement(`p`);
+          idEl.classList.add('par');
+          idEl.textContent = `ID - ${element.id}`;
+
+          const alternate_namesEl = document.createElement(`p`);
+          alternate_namesEl.classList.add('alternate_names');
+          alternate_namesEl.textContent = `Alternate_names - ${element.alternate_names}`;
+
+          const speciesEl = document.createElement(`p`);
+          speciesEl.classList.add('species');
+          speciesEl.textContent = `Species - ${element.species}`;
+
+          const genderEl = document.createElement(`p`);
+          genderEl.classList.add('gender');
+          genderEl.textContent = `Gender - ${element.gender}`;
+
+          const houseEl = document.createElement(`p`);
+          houseEl.classList.add('house');
+          houseEl.textContent = `House - ${element.house}`;
+
+          const dateOfBirthEl = document.createElement(`p`);
+          dateOfBirthEl.classList.add('dateOfBirth');
+          dateOfBirthEl.textContent = `DateOfBirth - ${element.dateOfBirth}`;
+
+          const yearOfBirthEl = document.createElement(`p`);
+          yearOfBirthEl.classList.add('yearOfBirth');
+          yearOfBirthEl.textContent = `YearOfBirth - ${element.yearOfBirth}`;
+
+          const wizardEl = document.createElement(`p`);
+          wizardEl.classList.add('wizard');
+          wizardEl.textContent = `Wizard - ${element.wizard}`;
+
+          const ancestryEl = document.createElement(`p`);
+          ancestryEl.classList.add('ancestry');
+          ancestryEl.textContent = `Ancestry - ${element.ancestry}`;
+
+          const eyeColourEl = document.createElement(`p`);
+          eyeColourEl.classList.add('eyeColour');
+          eyeColourEl.textContent = `EyeColour - ${element.eyeColour}`;
+
+          const hairColourEl = document.createElement(`p`);
+          hairColourEl.classList.add('hairColour');
+          hairColourEl.textContent = `HairColour - ${element.hairColour}`;
+
+          const wandEl = document.createElement(`p`);
+          wandEl.classList.add('wand');
+          wandEl.textContent = `Wand - ${element.wand}`;
+
+          const coreEl = document.createElement(`p`);
+          coreEl.classList.add('core');
+          coreEl.textContent = `Core - ${element.core}`;
+
+          const lengthEl = document.createElement(`p`);
+          lengthEl.classList.add('length');
+          lengthEl.textContent = `Length - ${element.length}`;
+
+          const patronusEl = document.createElement(`p`);
+          patronusEl.classList.add('patronus');
+          patronusEl.textContent = `Patronus - ${element.patronus}`;
+
+          const hogwartsStudentEl = document.createElement(`p`);
+          hogwartsStudentEl.classList.add('hogwartsStudent');
+          hogwartsStudentEl.textContent = `HogwartsStudent - ${element.hogwartsStudent}`;
+
+          const hogwartsStaffEl = document.createElement(`p`);
+          hogwartsStaffEl.classList.add('hogwartsStaff');
+          hogwartsStaffEl.textContent = `HogwartsStaff - ${element.hogwartsStaff}`;
+
+          const actorEl = document.createElement(`p`);
+          actorEl.classList.add('actor');
+          actorEl.textContent = `Actor - ${element.actor}`;
+
+          const alternate_actorsEl = document.createElement(`p`);
+          alternate_actorsEl.classList.add('alternate_actors');
+          alternate_actorsEl.textContent = `Alternate_actors - ${element.alternate_actors}`;
+
+          const aliveEl = document.createElement(`p`);
+          aliveEl.classList.add('alive');
+          aliveEl.textContent = `Alive - ${element.alive}`;
+
+          const imageEl = document.createElement(`p`);
+          imageEl.classList.add('image');
+          imageEl.textContent = `Image - ${element.image}`;
+
+
+          mainEl.appendChild(divEl);
+          divEl.appendChild(headerEl);
+          divEl.appendChild(imgEl);
+          divEl.appendChild(idEl);
+          divEl.appendChild(alternate_namesEl);
+          divEl.appendChild(speciesEl);
+          divEl.appendChild(genderEl);
+          divEl.appendChild(houseEl);
+          divEl.appendChild(dateOfBirthEl);
+          divEl.appendChild(yearOfBirthEl);
+          divEl.appendChild(wizardEl);
+          divEl.appendChild(ancestryEl);
+          divEl.appendChild(eyeColourEl);
+          divEl.appendChild(hairColourEl);
+          divEl.appendChild(wandEl);
+          divEl.appendChild(coreEl);
+          divEl.appendChild(lengthEl);
+          divEl.appendChild(patronusEl);
+          divEl.appendChild(hogwartsStudentEl);
+          divEl.appendChild(hogwartsStaffEl); 
+          divEl.appendChild(actorEl); 
+          divEl.appendChild(alternate_actorsEl); 
+          divEl.appendChild(aliveEl);
+          divEl.appendChild(imageEl);
+      });
+  </script>
+  </body>
+</html

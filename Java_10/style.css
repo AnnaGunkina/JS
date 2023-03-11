@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    background: url(https://s2.stc.all.kpcdn.net/putevoditel/projectid_534672/images/tild6438-6562-4838-b432-396439393537__10.jpg);
+    padding: 40px;
+}
+
+.content {
+    border: 2px solid rgb(60, 73, 93);
+    border-radius: 20px;
+    background-color: rgb(225, 237, 244);
+    padding: 20px; 
+    width: 300px;
+}
+
+.image {
+    width: 300px;
+}
+
