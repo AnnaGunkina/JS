@@ -1,18 +1,11 @@
 "use strict";
 
-// Находим элемент, куда надо вставить элементы.
 const featuredItemsEl = document.querySelector(".featuredItems");
-// Вставляем все данные из массива, предварительно каждые данные превратив в
-// html-разметки товаров, складывая все разметки в одну строку.
+
 featuredItemsEl.innerHTML = getProductsList()
   .map((product) => renderProduct(product))
   .join("");
 
-/**
- * Фугнкция создает html товара.
- * @param {object} data - объект с информацией о товаре.
- * @returns разметку товара.
- */
 function renderProduct(data) {
   return `
       <div class="featuredItem">
