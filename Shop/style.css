@@ -32,7 +32,6 @@ a {
   height: 74px;
   padding: 18px 16px;
   box-sizing: border-box;
-  
 }  
 
 .header .container {
@@ -53,9 +52,9 @@ a {
   font-size: 14px;
 }
 
-.rightHeader {
+/* .header_right {
   position: relative;
-}
+} */
 
 /* .header_right {
   display: -webkit-box;
@@ -75,6 +74,7 @@ a {
   align-items: center;
   gap: 41px;
 } */
+
 .search {
   transition: transform 0.4s;
 }
@@ -109,6 +109,7 @@ a {
 .cart:hover path {
   fill: #F16D7F;
 }
+
 .addToCart {
   color: #FFFFFF;
 }
